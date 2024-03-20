@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main--content">
+                <div class="header--wrapper">
+                    <div class="header--title">
+                        <h2>Products</h2>
+                    </div>
+                    <div class="user--info">
+                        <div class="search--box">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" name="" id="searchInput" oninput="filterList()" placeholder="Search for...">
+                        </div>
+                        <div class="settings">
+                            <i class="ph ph-gear"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                 <!-- Filter Buttons-->
+            <div class="filter">
+                <button data-name="all"><i class="ph ph-bandaids"></i>All Brands<i class="ph ph-caret-down"></i></button>
+                <button data-name="categories">Categories<i class="ph ph-caret-down"></i></button>
+                <button data-name="tags">Tags<i class="ph ph-caret-down"></i></button>
+                <button data-name="sort"><i class="ph ph-sort-ascending"></i>Sort</button>
+                <button data-name="filter"><i class="ph ph-faders"></i>Filter</button>
+                
+            </div>
+            </div>
+
+           
+
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside class="sidebar active">
+            <div class="menu-btn">
+                <i class="ph-bold ph-caret-left"></i>
+            </div>
+            <div class="head">
+                <div class="user-img">
+                    <img src="./logo.jpg" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="title">INC</p>
+                    <p class="name">InnovateHub</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-pencil-line"></i>
+                                <span class="text">Design team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-megaphone"></i>
+                                <span class="text">Marketing team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-code-simple"></i>
+                                <span class="text">Development team</span>
+                            </a>
+                        </li>
+                        <li class="team">
+                            <a href="#">
+                                <i class="ph ph-plus-square"></i>
+                                <span class="text">Create a team</span>
+                            </a>
+                        </li>
+                        <li class="folder">
+                            <a href="#">
+                                <span class="text">FOLDERS</span>
+                                <i class="ph ph-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-folder-simple"></i>
+                                <span class="text">Products</span>
+                                <i class="ph ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Roadmap</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Feedback</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Performance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Analytics</span>
+                                    </a>
+                                </li>
+                                <li class="team">
+                                    <a href="#">
+                                        <i class="ph ph-plus-square"></i>
+                                        <span class="text">Add new sub</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-folder-simple"></i>
+                                <span class="text">Sales</span>
+                                <i class="ph ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="team">
+                                    <a href="#">
+                                        <i class="ph ph-plus-square"></i>
+                                        <span class="text">Add new sub</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-folder-simple"></i>
+                                <span class="text">Design</span>
+                                <i class="ph ph-caret-down"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="team">
+                                    <a href="#">
+                                        <i class="ph ph-plus-square"></i>
+                                        <span class="text">Add new sub</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class="ph ph-folder-simple"></i>
+                                <span class="text">Office</span>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ph ph-folder-simple"></i>
+                                <span class="text">Legal</span>  
+                            </a>
+                        </li>
+
+
+                    
+                    </ul>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="ph ph-user-plus"></i>
+                            <span class="text">Invite teammates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ph ph-question"></i>
+                            <span class="text">Help and first steps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ph ph-number-circle-seven"></i>
+                            <span class="text">days left on trial <button>Add bling</button></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Sidebar -->
+        
+        <!-- Main -->
+        <main class="table">
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" name="brand" id="brand">Brand<i class="ph ph-plus"></i></th>
+                            <th>Description</th>
+                            <th>Categories</th>
+                            <th>Tags</th>
+                            <th>Next meeting</th>
+                            <th><i class="ph ph-plus"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="wix" id="1">
+                                <img src="./wix.png" alt="">
+                                <p class="brand">Wix</p>
+                            </td>
+                            <td>Develop a personalized...</td>
+                            <td><p class="categories authentication">Authentication</p></td>
+                            <td>#DigitalTransformation</td>
+                            <td><p class="meeting half">in 30 minutes</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="shopify" id="2">
+                                <img src="./shopify.png" alt="">
+                                <p class="brand">Shopify</p> 
+                            </td>
+                            <td>Introduce a cloud-based p...</td>
+                            <td><p class="categories ecommerce">Ecommerce</p><p class="categories b2b">B2B</p></td>
+                            <td>#OnlineShopping</td>
+                            <td><p class="meeting tomorrow">Tomorrow</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="mailchrimp" id="3">
+                                <img src="./mailchrimp.png" alt="">
+                                <p class="brand">MailChrimp</p> 
+                            </td>
+                            <td>Develop a mobile app aim...</td>
+                            <td><p class="categories saas">SAAS</p><p class="categories mobile">Mobile</p></td>
+                            <td>#TechInnovation</td>
+                            <td><p class="meeting tomorrow">Tomorrow</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="paypal" id="4">
+                                <img src="./paypal.png" alt="">
+                                <p>PayPal</p> 
+                            </td>
+                            <td>This program could includ...</td>
+                            <td><p class="categories marketplace">Marketplace</p></td>
+                            <td>#BuySellOnline</td>
+                            <td><p class="meeting six">in 6 hours</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="disney" id="5">
+                                <img src="./disney.png" alt="">
+                                <p>Disney</p> 
+                            </td>
+                            <td>Introduce a B2B solution t...</td>
+                            <td><p class="categories b2b">B2B</p><p class="categories b2c">B2C</p></td>
+                            <td>#BusinessPartnerships</td>
+                            <td><p class="meeting no">No contact</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="intercom" id="6">
+                                <img src="./intercom.png" alt="">
+                                <p>Intercom</p> 
+                            </td>
+                            <td>Implement an AI driven C...</td>
+                            <td><p class="categories technology">Technology</p><p class="categories saas">SAAS</p></td>
+                            <td>#SmartFinance</td>
+                            <td><p class="meeting one">in 1 hour</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="google" id="7">
+                                <img src="./google.png" alt="">
+                                <p>Google</p> 
+                            </td>
+                            <td>Offer a comprehensive cy...</td>
+                            <td><p class="categories finance">Finance</p><p class="categories automation">Automation</p></td>
+                            <td>#SmartFinance</td>
+                            <td><p class="meeting half">in 30 minutes</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="evernote" id="8">
+                                <img src="./evernote.png" alt="">
+                                <p>Evernote</p> 
+                            </td>
+                            <td>This could include smart...</td>
+                            <td><p class="categories transportation">Transportaion</p></td>
+                            <td>#LogisticsTech</td>
+                            <td><p class="meeting next">Next month</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="microsoft" id="9">
+                                <img src="./microsoft.png" alt="">
+                                <p>Microsoft</p> 
+                            </td>
+                            <td>Launch an advisory servic...</td>
+                            <td><p class="categories publishing">Publishing</p><p class="categories b2c">B2C</p></td>
+                            <td>#B2CMarketing</td>
+                            <td><p class="meeting no">No contact</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="invision" id="10">
+                                <img src="./invision.png" alt="">
+                                <p>Invision</p> 
+                            </td>
+                            <td>The tool would analyze tre...</td>
+                            <td><p class="categories webservices">Web Services</p></td>
+                            <td>#AIIntegration</td>
+                            <td><p class="meeting next">Next month</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <!-- End Main -->
+    </div>
+
+    <!-- Custome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./sample.js"></script>
+</body>
+</html>
